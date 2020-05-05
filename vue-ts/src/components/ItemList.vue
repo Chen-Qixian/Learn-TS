@@ -1,0 +1,25 @@
+<template>
+  <div id="memos" class="container">
+    <memo-item v-for="item in memoArr" :key="item.id" :memo="item">
+      {{ item.title }} - 
+    </memo-item>
+  </div>
+</template>
+
+<script lang="ts">
+import { Vue, Component } from 'vue-property-decorator'
+import ItemData from '../model/ItemData'
+import MemoItem from './MemoItem.vue'
+
+@Component({
+  components: {
+    MemoItem
+  }
+})
+
+
+export default class ItemList extends Vue {
+  memoArr: Array<ItemData> = this.$store.state.aHelper.memoList
+}
+
+</script>

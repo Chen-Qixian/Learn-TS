@@ -1,5 +1,6 @@
 import DataHelper from './DataHelper'
 import ItemData from '../model/ItemData'
+import Category from '@/model/CateEnum'
 
 class ActionHelper {
   // 数据处理
@@ -63,6 +64,11 @@ class ActionHelper {
       
       this.dataHelper.saveData(this.memoList)
     }
+  }
+  // 获取分类名
+  getCategoryName(cateId: Category): string {
+    const arrName = ['工作', '生活', '学习']
+    return arrName[cateId]
   }
 }
 
