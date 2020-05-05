@@ -4,11 +4,13 @@ import App from './App.vue'
 import Category from './model/CateEnum'
 import ItemData from './model/ItemData'
 import ActionHelper from './store/ActionHelper'
+import store from './store/index'
 
 Vue.config.productionTip = false
 
 new Vue({
   render: h => h(App),
+  store
 }).$mount('#app')
 
 // 测试创建笔记项

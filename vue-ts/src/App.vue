@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <menu-bar></menu-bar>
+    {{ $store.state.title }}
   </div>
 </template>
 
