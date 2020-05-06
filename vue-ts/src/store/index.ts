@@ -10,7 +10,7 @@ let store = new Vuex.Store({
     aHelper: new ActionHelper(),
     isShow: false,
     transMemo: null,
-    filterCateId: 2
+    filterCateId: -1
   },
   mutations: {
     showEditMemo (state: any, editMemo: any) {
