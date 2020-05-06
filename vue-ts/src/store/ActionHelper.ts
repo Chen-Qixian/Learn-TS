@@ -46,7 +46,7 @@ class ActionHelper {
 
     if(editItem) {
 
-      editItem.categoryId = item.id
+      editItem.categoryId = item.categoryId
       editItem.title = item.title
       editItem.content = item.content
 
